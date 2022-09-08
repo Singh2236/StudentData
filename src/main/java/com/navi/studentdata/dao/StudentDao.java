@@ -29,8 +29,6 @@ public class StudentDao implements DaoInterface {
         entityManagerFactory.close();
     }
 
-}
-
     @Override
     public List<Student> getAll() {
         return null;
