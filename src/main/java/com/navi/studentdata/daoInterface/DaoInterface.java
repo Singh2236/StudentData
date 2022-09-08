@@ -11,6 +11,8 @@ public interface DaoInterface {
     public int save();
     // will be returning the no. of rows affected
 
+    int save(String[] params);
+
     public int update();
     // will be returning the no. of rows affected
 
