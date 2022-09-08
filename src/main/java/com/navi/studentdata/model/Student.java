@@ -1,8 +1,6 @@
 package com.navi.studentdata.model;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.*;
 
@@ -11,7 +9,7 @@ import javax.persistence.*;
 //@Table(name="STUDENT", schema="SCHOOL") table name and schemas can also be defined here. Schema name helps to distinguish one set of tables from another.
 //The entity name defaults to the name of the class.We can change its name using the name element @Entity(name= "value")
 //entity classes must not be declared final.
-public class student {
+public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO) //We can choose from four id generation strategies with the strategy element. The value can be AUTO, TABLE, SEQUENCE, or IDENTITY:
     private int  id;
