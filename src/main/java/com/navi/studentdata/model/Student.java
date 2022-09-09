@@ -3,7 +3,8 @@ package com.navi.studentdata.model;
 import javax.persistence.*;
 
 @Entity
-public class Studentdata {
+@Table(name = "studentdata")
+public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
@@ -55,7 +56,7 @@ public class Studentdata {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Studentdata that = (Studentdata) o;
+        Student that = (Student) o;
 
         if (id != that.id) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;

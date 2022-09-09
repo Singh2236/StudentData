@@ -14,10 +14,17 @@
           <element id="module-output" name="StudentData" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.eclipse.persistence:eclipselink:3.0.3" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:eclipselink:2.7.9" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:jakarta.persistence:2.2.3" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:commonj.sdo:2.1.1" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.30" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.19.4" />
           <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.24" />
+          <element id="library" level="project" name="Maven: jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:2.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.servlet:jakarta.servlet-api:5.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.el:jakarta.el-api:4.0.0" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:3.0.0" />
+          <element id="library" level="project" name="Maven: com.sun.activation:jakarta.activation:2.0.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

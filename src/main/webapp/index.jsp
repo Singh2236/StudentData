@@ -1,27 +1,21 @@
 <%@ page import="javax.persistence.EntityManagerFactory" %>
 <%@ page import="javax.persistence.Persistence" %>
 <%@ page import="javax.persistence.EntityManager" %>
+<%@ page import="com.navi.studentdata.service.StudentDao" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%
-
-
-
+    StudentDao studentDao = new StudentDao();
+    int save = studentDao.save(new String[]{"28192", "Timeez", "CIE"});
+    System.out.println(save);
 %>
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>StudentData</title>
 </head>
 <body>
 <h1>Student Data</h1>
+
 <br/>
 <table>
     <tr>
