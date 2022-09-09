@@ -21,7 +21,7 @@
 <h1>Student Data</h1>
 <h3>Update information</h3>
 
-<form action="/StudentData_war_exploded/index.jsp" method="post">
+<form action="/StudentData_war_exploded/updateRedirectIndex.jsp" method="post">
     <table>
 
         <tr>
