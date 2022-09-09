@@ -19,19 +19,37 @@
 </head>
 <body>
 <h1>Student Data</h1>
+<h3>Update information</h3>
 
-<form action="/StudentData_war_exploded/save.jsp" method = "post">
+<form action="/StudentData_war_exploded/index.jsp" method="post">
     <table>
-        <tr><td>Name: </td><td><input type="text" name = "name"></td></tr>
-        <tr><td>Course: </td><td><input type="text" name = "course"></td></tr>
-        <tr><td>Matriculation Number: </td><td><input type="text" name = "matri"></td></tr>
-        <tr><td></td><td><input type="submit"></td></tr>
+
+        <tr>
+            <td>Id</td>
+            <td><input type="text" name="id"></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Course:</td>
+            <td><input type="text" name="course"></td>
+        </tr>
+        <tr>
+            <td>Matriculation Number:</td>
+            <td><input type="text" name="matri"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit"></td>
+        </tr>
     </table>
 </form>
 
 <br/>
 <div class="table-responsive">
-    <table class="table table-sm table-dark">
+    <table id="registraion" class="table table-sm table-dark">
         <thead>
         <tr>
             <th scope="col">ID</th>
@@ -53,6 +71,8 @@
             </td>
             <td><%=s.getMatri()%>
             </td>
+            <td><input type="button" value="edit" formaction="/StudentData_war_exploded/update.jsp"></td>
+            <td><input type="button" value="delete"></td>
 
         </tr>
 

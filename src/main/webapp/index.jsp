@@ -19,6 +19,8 @@
 </head>
 <body>
 <h1>Student Data</h1>
+<h3>Registration Form</h3>
+
 
 <form action="/StudentData_war_exploded/save.jsp" method = "post">
     <table>
@@ -29,9 +31,11 @@
     </table>
 </form>
 
+<h3><a href="updete.jsp">Update Information Form</a> </h3>
+
 <br/>
 <div class="table-responsive">
-    <table class="table table-sm table-dark">
+    <table id="registraion" class="table table-sm table-dark">
         <thead>
         <tr>
             <th scope="col">ID</th>
@@ -45,14 +49,12 @@
             for (Student s : all) {
         %>
         <tr>
-            <td><%=s.getId()%>
-            </td>
-            <td><%=s.getName()%>
-            </td>
-            <td><%=s.getCourse()%>
-            </td>
-            <td><%=s.getMatri()%>
-            </td>
+            <td><%=s.getId()%></td>
+            <td><%=s.getName()%></td>
+            <td><%=s.getCourse()%></td>
+            <td><%=s.getMatri()%></td>
+            <%--<td><input type="button" value="edit" formaction="/StudentData_war_exploded/update.jsp"></td>
+            <td><input type="button" value="delete 1"></td>--%>
 
         </tr>
 
