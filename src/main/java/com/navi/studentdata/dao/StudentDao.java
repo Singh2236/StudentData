@@ -1,7 +1,8 @@
 package com.navi.studentdata.dao;
 
 import com.navi.studentdata.daoInterface.DaoInterface;
-import com.navi.studentdata.model.Student;
+
+import com.navi.studentdata.model.Studentdata;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -30,19 +31,20 @@ public class StudentDao implements DaoInterface {
     }
 
     @Override
-    public List<Student> getAll() {
+    public List<Studentdata> getAll() {
         return null;
     }
+
 
     @Override
     public int save(String[] params) {
         transactionOn();
-        int id = Integer.parseInt(params[0]);
-        int matri = Integer.parseInt(params[2]);
-        String name = params[2];
-        String course = params[3];
 
-
+        Studentdata studentdata = new Studentdata();
+        studentdata.setName(params[1]);
+        studentdata.setMatri(Integer.parseInt(params[0]));
+        studentdata.setCourse(params[2]);
+        entityManager.persist(studentdata);
         transactionOff();
         return 0;
     }

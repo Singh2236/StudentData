@@ -1,17 +1,14 @@
 package com.navi.studentdata.daoInterface;
-
-import com.navi.studentdata.model.Student;
+import com.navi.studentdata.model.Studentdata;
 
 import java.util.List;
 
 public interface DaoInterface {
-    public List<Student> getAll();
+    public List<Studentdata> getAll();
     // will be returning the List of Students
 
-    public int save();
+    public int save(String[] params);
     // will be returning the no. of rows affected
-
-    int save(String[] params);
 
     public int update();
     // will be returning the no. of rows affected
