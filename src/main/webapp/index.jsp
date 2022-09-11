@@ -19,23 +19,83 @@
 </head>
 <body>
 <h1>Student Data</h1>
-<h3>Registration Form</h3>
 
 
-<form action="/StudentData_war_exploded/save.jsp" method = "post">
-    <table>
-        <tr><td>Name: </td><td><input type="text" name = "name"></td></tr>
-        <tr><td>Course: </td><td><input type="text" name = "course"></td></tr>
-        <tr><td>Matriculation Number: </td><td><input type="text" name = "matri"></td></tr>
-        <tr><td></td><td><input type="submit"></td></tr>
-    </table>
-</form>
+<table>
+    <tr>
+        <td id="Registraion">
+            <h3>Registration Form</h3>
+            <form action="/StudentData_war_exploded/saveRedirectIndex.jsp" method="post">
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Course:</td>
+                        <td><input type="text" name="course"></td>
+                    </tr>
+                    <tr>
+                        <td>Matriculation Number:</td>
+                        <td><input type="text" name="matri"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+        <td id="Update Information">
+            <h3>Update Information form</h3>
+            <form action="/StudentData_war_exploded/updateRedirectIndex.jsp" method="post">
+                <table>
 
-<h3><a href="updete.jsp">Update Information Form</a> </h3>
+                    <tr>
+                        <td>Id</td>
+                        <td><input type="text" name="id" placeholder="valid available id"></td>
+                    </tr>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Course:</td>
+                        <td><input type="text" name="course"></td>
+                    </tr>
+                    <tr>
+                        <td>Matriculation Number:</td>
+                        <td><input type="text" name="matri"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+        <td id="delete form">
+        <td id="Delete">
+            <h3>Delete</h3>
+            <form action="/StudentData_war_exploded/deleteRedirectIndex.jsp" method="post">
+                <table>
+                    <tr>
+                        <td>Id</td>
+                        <td><input type="text" name="id" placeholder="valid available id"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit"></td>
+                    </tr>
+                </table>
+            </form>
 
+        </td>
+    </tr>
+</table>
 <br/>
 <div class="table-responsive">
-    <table id="registraion" class="table table-sm table-dark">
+    <table class="table table-sm table-dark">
         <thead>
         <tr>
             <th scope="col">ID</th>
@@ -49,10 +109,14 @@
             for (Student s : all) {
         %>
         <tr>
-            <td><%=s.getId()%></td>
-            <td><%=s.getName()%></td>
-            <td><%=s.getCourse()%></td>
-            <td><%=s.getMatri()%></td>
+            <td><%=s.getId()%>
+            </td>
+            <td><%=s.getName()%>
+            </td>
+            <td><%=s.getCourse()%>
+            </td>
+            <td><%=s.getMatri()%>
+            </td>
             <%--<td><input type="button" value="edit" formaction="/StudentData_war_exploded/update.jsp"></td>
             <td><input type="button" value="delete 1"></td>--%>
 
@@ -64,6 +128,6 @@
         </tbody>
     </table>
 </div>
-<a href="/StudentData_war_exploded/index.jsp">Refresh</a>
+
 </body>
 </html>

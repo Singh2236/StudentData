@@ -38,7 +38,7 @@ public class StudentDao implements DaoInterface {
         transactionOn();
         List<Student> studentList = new ArrayList<>();
         //Todo: get maximum id number and replace with 5
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i <= 100; i++) {
             Student student = entityManager.find(Student.class, i);
             if (Objects.nonNull(student)) {
                 studentList.add(student);

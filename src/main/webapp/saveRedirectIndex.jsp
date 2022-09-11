@@ -14,9 +14,6 @@
     studentDao.save(new String[]{name, course, matri});
     response.sendRedirect("/StudentData_war_exploded/index.jsp");
 %>
-<h1>Student Data</h1>
-<p>You data has been saved</p>
-<a href="index.jsp">Home</a>
 
 </body>
 </html>

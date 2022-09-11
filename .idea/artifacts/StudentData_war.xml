@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="StudentData-1.0-SNAPSHOT.war">
+    <root id="archive" name="StudentData-1.war">
       <element id="artifact" artifact-name="StudentData:war exploded" />
     </root>
   </artifact>

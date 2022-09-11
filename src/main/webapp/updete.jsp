@@ -26,7 +26,7 @@
 
         <tr>
             <td>Id</td>
-            <td><input type="text" name="id"></td>
+            <td><input type="text" name="id" placeholder="valid available id"></td>
         </tr>
         <tr>
             <td>Name:</td>
@@ -46,6 +46,7 @@
         </tr>
     </table>
 </form>
+<h3><a href="index.jsp">Home</a></h3>
 
 <br/>
 <div class="table-responsive">
