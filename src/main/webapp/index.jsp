@@ -1,8 +1,5 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<%@ page import="javax.persistence.EntityManagerFactory" %>
-<%@ page import="javax.persistence.Persistence" %>
-<%@ page import="javax.persistence.EntityManager" %>
 <%@ page import="com.navi.studentdata.service.StudentDao" %>
 <%@ page import="com.navi.studentdata.model.Student" %>
 <%@ page import="java.util.List" %>
