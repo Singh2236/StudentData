@@ -3,7 +3,7 @@ package com.navi.studentdata.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "studentdata")
+@Table(name = "Studentdata")
 public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

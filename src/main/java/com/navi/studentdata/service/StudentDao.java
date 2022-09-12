@@ -7,16 +7,21 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.security.PrivateKey;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
 public class StudentDao implements DaoInterface {
-    EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("postgresql");
-    EntityManager entityManager = entityManagerFactory.createEntityManager();
-    EntityTransaction transaction = entityManager.getTransaction();
+    private EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("NavisPersistance");
+    private EntityManager entityManager = entityManagerFactory.createEntityManager();
+    private EntityTransaction transaction = entityManager.getTransaction();
 
 
+
+    public void printSth(){
+        System.out.println("Printing is working");
+    }
     private void transactionOn() {
         transaction.begin();
         //return transaction;
@@ -75,7 +80,7 @@ public class StudentDao implements DaoInterface {
     @Override
     public int delete(int id) {
         transactionOn();
-        Student student = entityManager.find(Student.class,id);
+        Student student = entityManager.find(Student.class, id);
         entityManager.remove(student);
 
         transactionOff();

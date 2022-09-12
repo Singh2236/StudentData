@@ -14,14 +14,14 @@
         </properties>
     </persistence-unit>-->
 
-    <persistence-unit name="postgresql">
+    <persistence-unit name="NavisPersistance">
         <class>com.navi.studentdata.model.Student</class>
         <properties>
-            <property name="eclipselink.jdbc.url"
+            <property name="javax.persistence.jdbc.url"
                       value="jdbc:postgresql://ec2-52-30-75-37.eu-west-1.compute.amazonaws.com:5432/d9v50g0ds5v21t"/>
-            <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
-            <property name="eclipselink.jdbc.user" value="blngizxdqcmvuy"/>
-            <property name="eclipselink.jdbc.password"
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="blngizxdqcmvuy"/>
+            <property name="javax.persistence.jdbc.password"
                       value="dec36fb2c4e7c214a378a632a5e3b61465fcb07793037d56014c4790f9289d33"/>
         </properties>
     </persistence-unit>

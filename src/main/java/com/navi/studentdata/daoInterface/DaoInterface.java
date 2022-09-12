@@ -1,4 +1,5 @@
 package com.navi.studentdata.daoInterface;
+
 import com.navi.studentdata.model.Student;
 
 import java.util.List;
