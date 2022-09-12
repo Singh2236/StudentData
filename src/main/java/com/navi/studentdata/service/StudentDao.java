@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Objects;
 
 public class StudentDao implements DaoInterface {
-    EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("default");
+    EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("postgresql");
     EntityManager entityManager = entityManagerFactory.createEntityManager();
     EntityTransaction transaction = entityManager.getTransaction();
 

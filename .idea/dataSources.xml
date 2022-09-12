@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="mydatabase@localhost" uuid="9175e809-d008-42a7-9cea-341de6fa1991">
-      <driver-ref>mysql.8</driver-ref>
+    <data-source source="LOCAL" name="d9v50g0ds5v21t@ec2-52-30-75-37.eu-west-1.compute.amazonaws.com" uuid="29fe1328-bc98-427d-80b3-902b25a2f83f">
+      <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/mydatabase</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="default/EclipseLink" uuid="48b0eed1-ab9e-4b78-8a19-96d3ecfa7f44">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>EclipseLink
-
-C:/Users/navka/IdeaProjects/StudentData/src/main/resources/META-INF/persistence.xml</remarks>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/mydatabase</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-52-30-75-37.eu-west-1.compute.amazonaws.com:5432/d9v50g0ds5v21t</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
